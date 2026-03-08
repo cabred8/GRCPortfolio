@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact</title>
+</head>
+	<link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
+	
+	<style>
+		@font-face {
+	font-family:Calibri_Bold;
+			src:url("calibrib.ttf");
+		}
+		
+		#headingBanner{
+		width:100.5%;
+		height:80px;
+		border:2px solid darkgray;
+		margin:-10px;
+		display:flex;
+		justify-content: flex-start;
+		align-items: center;
+		}
+		#bannerImg{
+		height:80px;
+		margin-left: 10px;}
+		b{
+		font:35px/1.4em "Changa One";
+			margin: auto 20px;}
+		h1{
+			text-align: center;
+			font: 48pt/1.4em "Changa One"; 	
+		}
+		form{
+			width: 70%;
+			min-height: 700px;
+			background: #469;
+			margin: 36px auto;
+			padding: 24px;
+		}
+		label {
+			font:14pt/1.5em "Calibri_Bold";
+			color: aliceblue;
+		}
+		input[type="text"] {
+			width: 95%;
+			font: 14pt/1.4em "Calibri_Bold";
+		}
+		fieldset{
+			margin-top: 18px;
+		}
+		legend {
+			font:14pt/1.4em "Calibri_Bold";
+			color: aliceblue;
+		}
+		textarea{width: 95%}
+		input[type="submit"]{
+			width: 120px;
+			height: 45px;
+			background-color: aliceblue;
+			margin: 16px auto auto;
+			font: 16px/1.4em "Calibri_Bold";
+			border: 1px darkgray;
+		}
+		
+	</style>
+	<script language="JavaScript">
+	function toggle(source) {
+		checkboxes 
+			= document.getElementsByName('foo');
+		for(var checkbox in checkboxes) checkboxes[checkbox].checked = 
+			source.checked;
+	}
+	</script>
+<body>
+	<div id="headingBanner">
+	<img id="bannerImg" src="logo head.png">
+		<b>Diego Capybara</b>
+	</div>
+	<h1>
+	Contact Me!
+	</h1>
+	<form action="https://formsubmit.co/cabred8@unlv.nevada.edu" method="post"> 
+		<label>First Name</label><br>
+		<input type="text"><br>
+		<label>Last Name</label><br>
+		<input type="text"><br>
+		<fieldset><legend>Reason for Contact</legend>
+		<input type="radio" name="contact"><label>Commission Work</label><br>
+		<input type="radio" name="contact"><label>Hiring for Projects</label><br>
+		<input type="radio" name="contact"><label>Design Service</label><br>
+		<input type="radio" name="contact"><label>Other (Please Specify)</label><br>
+		<textarea></textarea>
+		</fieldset>
+		<fieldset>
+			
+		<legend>Prefered Operating System</legend>
+		
+		<input type="checkbox" name="foo"><label>Windows</label><br>
+		<input type="checkbox" name="foo"><label>MacOS</label><br>
+		<input type="checkbox" name="foo"><label>Linux</label><br>
+		<input type="checkbox" onClick="toggle(this)"><label>All of the above</label><br>
+			
+		</fieldset><br>
+		<label>Additional Details</label><br>
+		<textarea rows="6"></textarea>
+		<input type="submit">
+	</form>
+</body>
+</html>
