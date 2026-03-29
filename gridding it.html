@@ -13,7 +13,7 @@
 		body{	
 		}
 		#headingBanner{
-		width:100.5%;
+		width:100vw;
 		height:80px;
 		border:2px solid darkgray;
 		margin:-10px;
@@ -32,6 +32,7 @@
 			font: 42pt/1.4em "Changa One"; }
 		#container{
 			width: 900px;
+			max-width: 95%;
 			height:2200px;
 			background:whitesmoke;
 			border: 1px solid black;
@@ -99,6 +100,68 @@
 			filter: brightness(85%) blur(2px);
 			transition: .2s;
 			font: 14pt/1.4em Calibri_Bold;
+		}
+
+	
+		@media only screen and (max-width: 750px) {
+			#container{
+				width: 90%;
+				height: 3500px;
+				grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr/auto;}
+				#container div:hover{
+			background-repeat: no-repeat;
+					background-position: center;}
+			#container div:nth-child(2){
+			background-image:url("CabreraQuintanilla_Can_I_Call_You_a_Dancin_Master.png");
+			background-size: cover;
+			background-position: center;
+			grid-area: 2/1/4/3;
+										}
+		#container div:nth-child(3){
+			background-image:url("kill_guy.png");
+			background-size: cover;
+			background-position: center;
+			column-span: all;
+		}
+		#container div:nth-child(4){
+			background-image:url("nico.png");
+			background-size: cover;
+			background-position: center;
+		}
+		#container div:nth-child(5){
+			background-image:url("ex2 plus.png");
+			background-size: cover;
+			background-position: center;
+			grid-area: 8/1/10/3;
+		}
+	#container div:nth-child(6){
+			background-image:url("portrait-01.png");
+			background-size: cover;
+			background-position: center;
+			grid-area:4/1/6/3;
+		}
+	#container div:nth-child(6){
+			background-image:url("portrait-01.png");
+			background-size: cover;
+			background-position: center;
+			grid-area:4/1/6/3;
+		}
+	#container div:nth-child(7){
+			background-image:url("film mag.png");
+			background-size: cover;
+			background-position: center;
+			grid-area: 7/1/8/3;
+		}	
+		#container div:nth-child(8){
+			background-image:url("war christmas.png");
+			background-size: cover;
+			background-position: center;
+			grid-area: 6/1/7/3;
+		}	
+				
+					
+				
+			}
 		}
 	</style>
 
