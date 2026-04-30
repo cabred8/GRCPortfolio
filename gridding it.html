@@ -32,7 +32,19 @@
 		b{
 		font:35px/1.4em "Changa One";
 			margin: auto 20px;}
-		
+		#nav{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		margin: 35px auto;
+		width: 80vw;
+		display: none;
+	}
+	button{
+		height: 35px;
+		font: 20px/1.4em "Calibri Bold"
+	}
 		h1{text-align: center;
 			font: 42pt/1.4em "Changa One"; }
 		h2{
@@ -118,7 +130,9 @@
 			h2{
 			display: none;
 			}
-			
+			#nav{
+				display: flex;
+			}
 		@media only screen and (max-width: 750px) {
 			#container{
 				width: 90%;
@@ -185,6 +199,12 @@
 	<div id="headingBanner">
 	<img id="bannerImg" src="logo head.png">
 		<b>Diego Capybara</b> <a href="index.html"><h2>Home</h2></a><a id="about" href="about.html"><h2>About</h2></a><h2>Gallery</h2><a href="contact_me.html"><h2>Contact</h2></a>
+	</div>
+	<div id="nav">
+	<button onClick="document.location='index.html'" id="Home">Home</button>
+	<button onClick="document.location='about.html'" id="About">About</button>
+	<button onClick="document.location='gridding it.html'" id="Gallery">Gallery</button>
+	<button onClick="document.location='contact_me.html'" id="Contact">Contact</button>
 	</div>
 	<h1>
 	Gallery</h1>
