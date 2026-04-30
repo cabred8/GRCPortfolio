@@ -19,7 +19,7 @@
 			src:url("calibrib.ttf");
 		}
 	#headingBanner{
-		width:101%;
+		width:100vw;
 		height:80px;
 		border:2px solid darkgray;
 		margin:-10px;
@@ -28,37 +28,98 @@
 		align-items: center;
 		
 	}
+	bane{
+		display:flex;
+	}
+	#nav{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		margin: 35px auto;
+		width: 80vw;
+		display: none;
+	}
+	button{
+		height: 35px;
+		font: 20px/1.4em "Calibri Bold"
+	}
 		h1{
 			text-align: center;
 			font: 48pt/1.4em "Changa One"; 
+			margin: 48px auto;
+			align-self: center;
 			
+		}
+		h2{
+			margin: 20px 40px;
+			font: 22pt/1.4em "Calibri Bold";
+			color: black;
+		}
+		h2:nth-child(1){
+		font-weight: bold;
 		}
 		figure{
-			background: white;
-			border: 1px solid black
+			height: 300px
 		}
 		figcaption{
-			font: 14pt/1.3em "Calibri";
-			margin-top: 3px;
+			font: 18pt/1.3em "Calibri";
+			margin: 12px 0px;
 			display: flex;
 			justify-content: center;
-			flex-wrap:wrap;
-			width: 200px;
+			align-content:flex-end;
 			text-align: center;
-			
+			background: rgba(240,240,240,.95);
+			padding: 6px;
+			width: 200px;
+			color: black;
 		}
 		#textbox{
-			width: 980px;
-			height: 600px;
+			width: 80vw;
 			border: 1px solid black;
 			background: #469;
 			margin: 0 auto;
-			display:flex;
-			justify-content: center;
-			flex-wrap: wrap;
-			align-content: center;
+			display:grid;
+			grid: 1fr 1fr/1fr 1fr;
 			margin-bottom: 40px;
 		}
+	
+	#D2K{
+			background-image:url("D2KMiniSize.png");
+			background-size:cover;
+			background-position: center;
+		}
+	
+	#DM{
+			background-image:url("DanceMasterMiniSize.png");
+			background-size:cover;
+			background-position: center;
+		}
+	
+	#WC{
+			background-image:url("war christmas mini size.png");
+			background-size:cover;
+		background-position: center;
+	}
+	
+	#LO{
+			background-image:url("LogoDesignPageMiniSize.png");
+			background-size:auto;
+			background-position: top left;
+		}
+	
+	#BB{
+			background-image:url("BETA BOX MINI SIZE.png");
+			background-size:cover;
+			background-position: top;
+		}
+	
+	#DD{
+			background-image:url("DDR SCREEN DECAL Mini Mix.png");
+			background-size:cover;
+			background-position: top;
+	}
+	
 	#bannerImg{
 		height:80px;
 		margin-left: 10px;
@@ -69,11 +130,11 @@
 		margin: auto 20px;
 	}
 	p{
-		font: 26px/1.4em "Calibri Bold";
+		font: 36px/1.4em "Calibri";
 		text-align: center;
-		width: 800px;
+		width: 60vw;
 			height: 120px;
-			margin: 0 auto;
+			margin: 40px auto;
 			margin-bottom: 60px;
 			display:flex;
 			justify-content: center;
@@ -81,74 +142,120 @@
 			align-content: center;
 	}		
 	
-		img:hover{
+		div a:hover{
 			transform: scale(1.03);
         transition: transform 0.5s;
-			filter:brightness(1.05);
+			filter:brightness(1.1);
 			transition: 1.05s;
-			
+			color: black;
 		}
-	body{
-		background: 
+	@media only screen and (max-width : 1039.39px ){
+		#nav{display: flex}
+		
+		h2{
+			display: none;
+			}
+		p{
+		font: 30px/1.4em "Calibri";
+		text-align: center;
+		width: 60vw;
+			height: 120px;
+			margin: 90px auto;
+			
+			display:flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			align-content: center;
+	}		
+		}
+	@media only screen and (max-width : 750px ){
+		#textbox{
+			width: 85vw;
+			border: 1px solid black;
+			background: #469;
+			margin: 0 auto;
+			display:grid;
+			grid: 1fr 1fr 1fr 1fr 1fr 1fr/ 1fr;
+			margin: 40px auto;
+		}
+		p{
+		font: 30px/1.4em "Calibri";
+		text-align: center;
+		width: 60vw;
+			height: 120px;
+			margin: 120px auto;
+	
+			display:flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			align-content: center;
+	}		
 	}
 	</style>
 	
 <body>
 	<div id="headingBanner">
 	<img id="bannerImg" src="logo head.png">
-		<b>Diego Capybara</b>
+		<b>Diego Capybara</b> <h2>Home</h2><a id="about" href="about.html"><h2>About</h2></a><a href="gridding it.html"><h2>Gallery</h2></a><a href="contact_me.html"><h2>Contact</h2></a>
+	
+		
 	</div>
-	<h1>Portfolio</h1>
+	
+	<div id="nav">
+	<button onClick="document.location='index.html'" id="Home">Home</button>
+	<button onClick="document.location='about.html'" id="About">About</button>
+	<button onClick="document.location='gridding it.html'" id="Gallery">Gallery</button>
+	<button onClick="document.location='contact_me.html'" id="Contact">Contact</button>
+	</div>
+	<h1>Home</h1>
 	<p> My name is Diego Cabrera Quintanilla, and I am a Digital Artist and Graphic Designer from Las Vegas. Below is a sampler of my work.</p>
 	<div id="textbox">
-		<figure>
-			<a href="D2K.png">
-			<img src="NoiseMaker.png"/>
-			</a>
+		<a id="D2K" href="makeSomeNoise.html">
+			<figure>
 			<figcaption>
 				Make Some Noise
 			</figcaption>
 		</figure>
-		<figure>
-			<a href="CabreraQuintanilla_Can_I_Call_You_a_Dancin_Master.png">
-				<img src="DancinMaster.png"/>
-			</a>
+		</a>
+		
+		<a id="DM" href="DancingMaster.html"><figure>
 			<figcaption>
 				Can I Call You a Dancin' Master?
 			</figcaption>
 		</figure>
-		<figure>
-			<a href="war christmas.png">
-				<img src="Warmass.png"/>
-			</a>
+		</a>
+		<a id="WC" href="warNeverEnds.html">
+			<figure>
 			<figcaption>
 				War Never Ends
 			</figcaption>
 		</figure>
-		<figure>
-			<a href="LogoDesignPage.png">
-			<img src="LogoDesign.png"/>
 			</a>
+		
+		<a id="LO" href="logoDesignInfograph.html">
+			
+			<figure>
+			
 			<figcaption>
 				Logo Design Infographic
 			</figcaption>
-		</figure>
-		<figure>
-			<a href="BETA BOX.png">
-			<img src="CarPackage.png"/>
-			</a>
+		</figure></a>
+		
+		<a id="BB" href="ToyCar.html">
+			<figure>
+			
 			<figcaption>
 				Toy Car Package
 			</figcaption>
 		</figure>
-		<figure>
-			<a href="DDR SCREEN DECAL.png">
-			<img src="HereWeGo.png"/>
-			</a>
+		</a>
+		
+		<a id="DD" href="DDRScreen.html">
+			<figure>		
 			<figcaption>
 				DDR Arcade Screen Border Recreation
 			</figcaption>
-		</figure>
+		</figure></a>
 	</div>
 	<p>To view each piece in full resolution, click on an image to open.</p>
 </body>

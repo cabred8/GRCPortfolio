@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ArtFight EX 25</title>
+	<link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
+	
+</head>
+<style>
+body{
+		background: whitesmoke;
+	}
+		@font-face {
+			font-family:Helvetica;
+			src:url("Helvetica.ttf");
+			font-family:Calibri;
+			src:url(calibri.ttf);
+			font-family:Calibri Bold;
+			src:url("calibrib.ttf");
+		}
+	#headingBanner{
+		width:100vw;
+		height:80px;
+		border:2px solid darkgray;
+		margin:-10px;
+		display:flex;
+		justify-content: flex-start;
+		align-items: center;
+		}
+		#bannerImg{
+		height:80px;
+		margin-left: 10px;}
+		b{
+		font:35px/1.4em "Changa One";
+			margin: auto 20px;}
+		#nav{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		margin: 35px auto;
+		width: 80vw;
+		display: none;
+	}
+	button{
+		height: 35px;
+		font: 20px/1.4em "Calibri Bold"
+	}
+		
+		h1{text-align: center;
+			font: 42pt/1.4em "Changa One"; }
+		h1:nth-child(2){
+			font: 36pt/1.4em "Changa One";
+		}
+		h2{
+			margin: 20px 40px;
+			font: 22pt/1.4em "Calibri Bold";
+			color:black;
+		}	
+	#EX{
+			width: 50vw;
+			float:left;
+			margin-right: 54px;
+		}
+		
+		#ArtShowcase{
+			width: 87vw;
+			margin: 36px auto;
+		}
+		p{
+		font: 19px/1.4em "Calibri Bold";
+			text-align: left;
+			margin-left: 14px;
+			padding-top: 10px;
+		}
+		
+		@media only screen and (max-width : 1039.39px ){
+			h2{
+			display: none;
+			}
+			#nav{display:flex}
+		@media only screen and (max-width: 875px) {
+			#EX{
+				float:none;
+				display: flex;
+				margin: 10px auto;
+				width: 80vw;
+			}
+		}
+	</style>
+<body>
+	<div id="headingBanner">
+	<img id="bannerImg" src="logo head.png">
+		<b>Diego Capybara</b> <a href="index.html"><h2>Home</h2></a><a href="about.html"><h2>About</h2></a><a href="gridding it.html"><h2>Gallery</h2></a><a href="contact_me.html"><h2>Contact</h2></a>
+	</div>
+	<div id="nav">
+	<button onClick="document.location='index.html'" id="Home">Home</button>
+	<button onClick="document.location='about.html'" id="About">About</button>
+	<button onClick="document.location='gridding it.html'" id="Gallery">Gallery</button>
+	<button onClick="document.location='contact_me.html'" id="Contact">Contact</button>
+	</div>
+	<div id="ArtShowcase">
+		
+		<img id="EX" src="ex2 plus.png">
+		<h1>Art Fight EX '25</h1>
+		<p>Originally made in July of 2025, the piece was made for the 2025 annual ArtFight event. The piece features multiple characters from multiple artists in a single composition. The piece takes heavy inspiration from Street Fighter EX 2 Plus key art. The characters featured from bottom right, clockwise are: Valarian, Beau, Grizz, Curtis, Thresh, Robbie Smokes, and Harlequin.
+		</p>
+	</div>
+</body>
+</html>

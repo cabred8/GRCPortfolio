@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>About Page</title>
+</head>
+
+	<link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
+	
+	<style>
+	
+	body{
+		background: whitesmoke;
+	}
+		@font-face {
+			font-family:Helvetica;
+			src:url("Helvetica.ttf");
+			font-family:Calibri;
+			src:url(calibri.ttf);
+			font-family:Calibri Bold;
+			src:url("calibrib.ttf");
+		}
+	#headingBanner{
+		width:100vw;
+		height:80px;
+		border:2px solid darkgray;
+		margin:-10px;
+		display:flex;
+		justify-content: flex-start;
+		align-items: center;
+		}
+		#bannerImg{
+		height:80px;
+		margin-left: 10px;}
+		b{
+		font:35px/1.4em "Changa One";
+			margin: auto 20px;}
+		#nav{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		margin: 35px auto;
+		width: 80vw;
+		display: none;
+	}
+	button{
+		height: 35px;
+		font: 20px/1.4em "Calibri Bold"
+	}
+		
+		h1{text-align: center;
+			font: 42pt/1.4em "Changa One"; }
+		h2{
+			margin: 20px 40px;
+			font: 22pt/1.4em "Calibri Bold";
+			color:black;
+		}
+		
+		#BioPic{
+			width: 40vw;
+			float:left;
+			margin-right: 54px;
+		}
+		
+		#Biography{
+			width: 87vw;
+			margin: 36px auto;
+		}
+		p{
+		font: 19px/1.4em "Calibri Bold";
+			text-align: left;
+			margin-left: 14px;
+			padding-top: 10px;
+		}
+		
+		@media only screen and (max-width : 1039.39px ){
+			h2{
+			display: none;
+			}
+			#nav{display:flex}
+		@media only screen and (max-width: 750px) {
+			
+		}
+	</style>
+	
+<body>
+	<div id="headingBanner">
+	<img id="bannerImg" src="logo head.png">
+		<b>Diego Capybara</b> <a href="index.html"><h2>Home</h2></a><h2>About</h2><a href="gridding it.html"><h2>Gallery</h2></a><a href="contact_me.html"><h2>Contact</h2></a>
+	</div>
+	<div id="nav">
+	<button onClick="document.location='index.html'" id="Home">Home</button>
+	<button onClick="document.location='about.html'" id="About">About</button>
+	<button onClick="document.location='gridding it.html'" id="Gallery">Gallery</button>
+	<button onClick="document.location='contact_me.html'" id="Contact">Contact</button>
+	</div>
+	<div id="Biography">
+		<img id="BioPic" src="DiegoBioPic.jpg">
+		<p>Diego Capybara (Diego Cabrera Quintanilla) is a student based in Las Vegas, Nevada. 	</p>
+		<p>He is working towards a degree in Graphic Design at UNLV, and with it, a different perspective at tackling design issues. Diego leads projects with a tight schedule and attention to detail to make sure a brand campaign reaches as many people as possible.</p>
+		<p>Outside of graphic design, Diego spends time honing in on digital illustrations for clients and other artists, collaborating in large groups and showcasing it on social media.
+		</p>
+	</div>
+</body>
+</html>

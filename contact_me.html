@@ -8,19 +8,38 @@
 	
 	<style>
 		@font-face {
-	font-family:Calibri_Bold;
+			font-family:Helvetica;
+			src:url("Helvetica.ttf");
+			font-family:Calibri;
+			src:url(calibri.ttf);
+			font-family:Calibri Bold;
 			src:url("calibrib.ttf");
 		}
 		
 		#headingBanner{
-		width:100.5%;
+		width:100vw;
 		height:80px;
 		border:2px solid darkgray;
 		margin:-10px;
 		display:flex;
 		justify-content: flex-start;
 		align-items: center;
-		}
+	}
+	
+		#nav{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		margin: 35px auto;
+		width: 80vw;
+		display: none;
+	}
+	button{
+		height: 35px;
+		font: 20px/1.4em "Calibri Bold"
+	}
+		
 		#bannerImg{
 		height:80px;
 		margin-left: 10px;}
@@ -30,6 +49,11 @@
 		h1{
 			text-align: center;
 			font: 48pt/1.4em "Changa One"; 	
+		}
+		h2{
+			margin: 20px 40px;
+			font: 22pt/1.4em "Calibri Bold";
+			color:black;
 		}
 		form{
 			width: 70%;
@@ -62,7 +86,25 @@
 			font: 16px/1.4em "Calibri_Bold";
 			border: 1px darkgray;
 		}
+		@media only screen and (max-width : 1039.39px ){
+		#nav{display: flex}
 		
+		h2{
+			display: none;
+			}
+		p{
+		font: 30px/1.4em "Calibri";
+		text-align: center;
+		width: 60vw;
+			height: 120px;
+			margin: 90px auto;
+			
+			display:flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			align-content: center;
+	}		
+		}
 	</style>
 	<script language="JavaScript">
 	function toggle(source) {
@@ -75,7 +117,13 @@
 <body>
 	<div id="headingBanner">
 	<img id="bannerImg" src="logo head.png">
-		<b>Diego Capybara</b>
+		<b>Diego Capybara</b> <a href="index.html"><h2>Home</h2></a><a id="about" href="about.html"><h2>About</h2></a><a href="gridding it.html"><h2>Gallery</h2></a><h2>Contact</h2>
+	</div>
+	<div id="nav">
+	<button onClick="document.location='index.html'" id="Home">Home</button>
+	<button onClick="document.location='about.html'" id="About">About</button>
+	<button onClick="document.location='gridding it.html'" id="Gallery">Gallery</button>
+	<button onClick="document.location='contact_me.html'" id="Contact">Contact</button>
 	</div>
 	<h1>
 	Contact Me!
